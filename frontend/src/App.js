@@ -6,7 +6,6 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import data from './data';
 import HomeScreen from './Screens/HomeScreen';
 import ProductScreen from './Screens/ProductScreen';
 
