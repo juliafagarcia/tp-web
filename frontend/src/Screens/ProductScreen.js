@@ -9,10 +9,10 @@ function ProductScreen(props){
 
     const productDetails = useSelector(state => state.productDetails);
     const {product, loading, error} = productDetails;
-    const dispatch = useDispatch;
+    const dispatch = useDispatch();
 
     useEffect(() => {
-      dispatch(detailsProduct());
+      dispatch(detailsProduct(props.match.params.id));
       return () => {
 
       };

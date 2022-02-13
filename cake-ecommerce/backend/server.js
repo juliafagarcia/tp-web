@@ -5,9 +5,9 @@ const app = express();
 
 app.get("/api/products/:id", (req, res) => {
   const productId = req.params.id;
-  const product = data.products.find(x=>x._id === productId);
+  const product = data.products.find(x=>x.id === productId);
   if(product)
-    res.send();
+    res.send(product);
   else
     res.status(404).send({ msg: "Produto não encontrado."})
 });
